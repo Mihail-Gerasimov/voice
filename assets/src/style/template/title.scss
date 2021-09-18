@@ -1,0 +1,19 @@
+.title-common {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 120%;
+    color: #0e8fe3;
+}
+
+@media (max-width: 1560px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+    .title-common {
+        font-size: 40px;
+    }
+}
+@media (max-width: 575px) {
+}

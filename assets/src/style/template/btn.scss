@@ -1,0 +1,103 @@
+.btn-blue {
+    background-color: #0e8fe3;
+    border-radius: 10px;
+    max-width: 275px;
+    width: 100%;
+    position: relative;
+    display: block;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    padding: 18px 0;
+    text-align: center;
+    transition: 0.4s;
+    z-index: 0;
+    &::before {
+        display: table;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        max-width: 226px;
+        width: 100%;
+        background-color: rgba(14, 143, 227, 0.3);
+        border-radius: 10px;
+        left: 50%;
+        height: 40px;
+        transform: translateX(-50%);
+        bottom: -7px;
+        transition: 0.4s;
+    }
+    &:hover::before {
+        transition: 0.4s;
+        background-color: rgba(14, 143, 227, 0.4);
+        filter: blur(10px);
+    }
+    &:hover {
+        transition: 0.4s;
+        transform: scale(1.04);
+    }
+}
+
+.btn-yellow {
+    display: flex;
+    justify-content: center;
+    background-color: #bcca00;
+    border-radius: 10px;
+    max-width: 275px;
+    width: 100%;
+    position: relative;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #181c2a;
+    padding: 18px 0;
+    text-align: center;
+    transition: 0.4s;
+    // z-index: 0;
+
+    &::before {
+        display: table;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        max-width: 226px;
+        width: 100%;
+        background-color: rgba(209, 224, 0, 0.3);
+        border-radius: 10px;
+        left: 50%;
+        height: 40px;
+        transform: translateX(-50%);
+        bottom: -7px;
+        transition: 0.4s;
+    }
+    &:hover::before {
+        transition: 0.4s;
+        background-color: rgba(209, 224, 0, 0.4);
+        filter: blur(10px);
+    }
+    &:hover {
+        transition: 0.4s;
+        transform: scale(1.04);
+    }
+}
+
+// структура html кнопки btn-yellow
+// <button class="btn-yellow">Заказать звонок
+//      <img class="ms-2" src="../img/btn/Vector.png" alt="">
+// </button>
+
+@media (max-width: 992px) {
+    .btn-blue {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .btn-yellow {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
