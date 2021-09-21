@@ -1589,6 +1589,12 @@
   }
   // PARTNERS
   // employees
+  .btn-yellow__employees--individ {
+    width: 225px;
+    &::before {
+      max-width: 190px;
+    }
+  }
   .employees-page .application__blue-box {
     border-radius: 200px 200px 0 100px;
     max-width: 280px;

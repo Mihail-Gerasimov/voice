@@ -13112,6 +13112,10 @@ button:focus {
   .circle-block__partners {
     left: 104px;
     top: 147px; }
+  .btn-yellow__employees--individ {
+    width: 225px; }
+    .btn-yellow__employees--individ::before {
+      max-width: 190px; }
   .employees-page .application__blue-box {
     border-radius: 200px 200px 0 100px;
     max-width: 280px;
