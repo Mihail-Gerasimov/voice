@@ -1014,6 +1014,22 @@
     border-radius: 0;
   }
   // employess
+  // footer
+  .logo-footer {
+    margin-right: 80px;
+  }
+  .logo-footer img {
+    width: 130px;
+  }
+  .footer-list__item {
+    margin-right: 20px;
+  }
+  // footer
+  // 404
+  .general-wrapper {
+    height: auto;
+  }
+  // 404
 }
 @media (max-width: 767px) {
   .contacts-main {
@@ -1031,6 +1047,7 @@
   .not-found-main {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 70px;
   }
 
   .not-found__item:first-child,
@@ -1227,6 +1244,7 @@
   }
   .voicecom {
     padding-top: 60px;
+    overflow: hidden;
   }
   .border-decor-partners {
     width: 410px;
@@ -1296,6 +1314,14 @@
     width: 200px;
   }
   // modal
+  // footer
+  .footer-list__item {
+    margin-right: 0;
+  }
+  .logo-footer {
+    margin-right: 0px;
+  }
+  // footer
 }
 @media (max-width: 600px) {
   // about-us
@@ -1563,6 +1589,12 @@
   }
   // PARTNERS
   // employees
+  .employees-page .application__blue-box {
+    border-radius: 200px 200px 0 100px;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 100px 20px 80px;
+  }
   .employees-page__item::before {
     top: 2px;
   }
@@ -1654,6 +1686,7 @@
   }
   .change-btn-click__scroll {
     width: 426px;
+    padding: 2px 0;
   }
   .change-btn-click::-webkit-scrollbar {
     width: 0;

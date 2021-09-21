@@ -268,9 +268,24 @@
 
 .ch-img-btn {
   opacity: 0;
+  display: none;
 }
 .ch-img-btn-active {
-  opacity: 100% !important;
+  display: block;
+  opacity: 100%;
+  animation-name: big;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes big {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.07);
+  }
 }
 
 .change-value-text {
@@ -719,6 +734,12 @@
 // contacts
 
 /*404*/
+.general-wrapper {
+  height: 100vh;
+}
+.general-wrapper-main {
+  // height: 100vh;
+}
 .not-found {
   padding-top: 169px;
 }
@@ -727,6 +748,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 140px;
 }
 
 .not-found__item:first-child {
@@ -1219,3 +1241,26 @@
   top: 0;
 }
 // modal
+
+// footer
+.footer {
+  background-color: #0e8fe3;
+}
+.logo-footer {
+  margin-right: 205px;
+}
+.footer-list__item {
+  margin-right: 40px;
+  &::before {
+    margin-right: 0px;
+  }
+}
+.footer-list__item a {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+// footer
